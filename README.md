@@ -1,0 +1,2 @@
+# nonebot_plugin_face2cartoonpic
+基于腾讯云合成图的以图绘图
