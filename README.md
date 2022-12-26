@@ -4,7 +4,7 @@
   <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText"></p>
 </div>
 
-<div align="center">
+</div align="center">
   
 # nonebot_plugin_face2cartoonpic
   
