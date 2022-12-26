@@ -10,7 +10,7 @@
   
 _✨基于腾讯云合成图的以图绘图的Nonebot插件✨_
 
-  ---
+---
   
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/ANGJustinl/nonebot_plugin_face2cartoonpic" alt="license">
@@ -22,11 +22,12 @@ _✨基于腾讯云合成图的以图绘图的Nonebot插件✨_
     <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 </a>
 
+---  
   
 ## 💿 安装
 
 ### 1. nb-cli安装（推荐）
-在你bot工程的文件夹下，运行cmd（运行路径要对啊），执行nb命令安装插件，插件配置会自动添加至配置文件  
+bot根目录下打开命令行，执行nb命令安装插件，插件配置会自动添加至配置文件  
 ```
 nb plugin install nonebot_plugin_face2cartoonpic
 ```
@@ -45,3 +46,39 @@ pyproject.toml配置例如：
 plugin_dirs = ["src/plugins"]
 plugins = ["nonebot_plugin_face2cartoonpic","xxxxx"]
 ```
+  
+## 📖 配置
+--- 
+  
+官方指南 https://cloud.tencent.com/document/product/1202/41796  
+  
+先到腾讯云这里获取服务资源包 https://console.cloud.tencent.com/ft/resource
+  
+再去 https://console.cloud.tencent.com/cam/capi 的api密钥管理获取api密钥
+  
+---
+  
+bot根目录下.env文件
+  
+```  
+  
+Secret_Id = ""这两个写从腾讯云获取的api密钥
+  
+Secret_Key = ""
+  
+FaceCartoonPic_cd_time = 60{int}默认60  
+  
+```  
+## 🎉 使用
+### 指令表
+| 指令 | 需要@ | 范围 | 说明 |
+|:-----:|:----:|:----:|:----:|
+| 人物变换 + 图片 | 否 | 群聊/私聊 | 对发送的图片启用模型, 支持回复图片 |
+
+使用示例：
+
+    /人物变换 <图像>
+
+**注意**
+
+默认情况下, 您应该在指令前加上命令前缀, 通常是 /
