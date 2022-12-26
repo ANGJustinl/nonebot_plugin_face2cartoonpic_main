@@ -1,15 +1,17 @@
 <div align="center">
+  
   <a href="https://v2.nonebot.dev/store"><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/nbp_logo.png" width="180" height="180" alt="NoneBotPluginLogo"></a>
   <br>
   <p><img src="https://github.com/A-kirami/nonebot-plugin-template/blob/resources/NoneBotPlugin.svg" width="240" alt="NoneBotPluginText"></p>
-</div>
 
 
-  
 # nonebot_plugin_face2cartoonpic
   
 _✨基于腾讯云合成图的以图绘图的Nonebot插件✨_
 
+
+
+ 
 ---
   
 <a href="./LICENSE">
@@ -23,8 +25,7 @@ _✨基于腾讯云合成图的以图绘图的Nonebot插件✨_
 </a>
 
 ---  
-
- </div align="center"> 
+ </div> 
   
 ## 💿 安装
 
