@@ -20,7 +20,7 @@ class timestamp:
 
 def get_redirect_url(url):
     # 重定向前的链接
-    
+
     # 请求头，这里我设置了浏览器代理
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'}
@@ -53,12 +53,12 @@ def sign_str(key, s, method):
 ##############
 
 async def get_pic(pic_input): 
-    
+
     endpoint = "ft.tencentcloudapi.com"
     data = {
         'Action' : Action,
         'Url' : pic_input,
-        
+
         'Nonce' : timestamp.get_nonce(timestamp.get_ts()),
         'RspImgType':'url',
         'Region' : Region,
@@ -73,7 +73,7 @@ async def get_pic(pic_input):
       print('没有设置Secret_key')
       return 1
     print("key输入成功\n证书签名如下\n["+str(data["Signature"])+"] ")
-    
+
     resp =  requests.get("https://" + endpoint, params=data)
     print(resp)
     msg_raw =  resp.json()
@@ -84,5 +84,3 @@ async def get_pic(pic_input):
         print("输入的不是人像")
         return 2
     return msg
-    
-

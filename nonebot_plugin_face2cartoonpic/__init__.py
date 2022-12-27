@@ -41,8 +41,6 @@ async def _handle(matcher: Matcher,event: MessageEvent,state: T_State):
         await matcher.finish(f'我知道你急了.但是你先别急,cd还有{left_time}秒')
         return 
     url_input = state["urls"][0]
-    limiter.start_cd(user_id)
-    
     msg_raw = await get_pic(url_input)
 
     if msg_raw == 1:
@@ -50,8 +48,9 @@ async def _handle(matcher: Matcher,event: MessageEvent,state: T_State):
         await fc.finish("寄，画图失败了,没有设置Secret_key", reply_message=True) 
     if msg_raw == 2:
         logger.error("画图失败,输入的不是人像\n error2")
-        await fc.finish("寄，画图失败了,输入的不是人像", reply_message=True)
+        await fc.finish("寄，画图失败了,输入的不是人像(或api密钥错误)", reply_message=True)
 
+    limiter.start_cd(user_id)
     url = msg_raw
     await fc.send(url)
     await fc.finish(MessageSegment.image(file=url, cache=False), at_sender=True)

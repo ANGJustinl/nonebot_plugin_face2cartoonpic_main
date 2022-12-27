@@ -2,8 +2,8 @@ from pydantic import BaseSettings
 import nonebot
 
 class Config(BaseSettings):
-    Secret_Id: str = ""  # 腾讯云Secretid
-    Secret_Key: str = ""  # 腾讯云SecretKey
+    Secret_Id: str = ''  # 腾讯云Secretid
+    Secret_Key: str = ''  # 腾讯云SecretKey
     FaceCartoonPic_cd_time: int = 60  # cd时间，单位秒
     class Config:
         extra = "ignore"
