@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+nonebot_plugin_face2cartoonpic/__init__.py
+nonebot_plugin_face2cartoonpic/config.py
+nonebot_plugin_face2cartoonpic/limiter.py
+nonebot_plugin_face2cartoonpic/tencentapi.py
+nonebot_plugin_face2cartoonpic.egg-info/PKG-INFO
+nonebot_plugin_face2cartoonpic.egg-info/SOURCES.txt
+nonebot_plugin_face2cartoonpic.egg-info/dependency_links.txt
+nonebot_plugin_face2cartoonpic.egg-info/requires.txt
+nonebot_plugin_face2cartoonpic.egg-info/top_level.txt
