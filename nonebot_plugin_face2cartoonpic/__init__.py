@@ -10,7 +10,6 @@ from nonebot.adapters.onebot.v11.helpers import extract_image_urls
 from nonebot.params import Arg
 from nonebot.log import logger
 
-from .config import Config
 from .limiter import limiter
 from .tencentapi import get_pic
 
@@ -56,7 +55,6 @@ async def _handle(matcher: Matcher,event: MessageEvent,state: T_State):
     url = msg_raw
     await fc.send(url)
     await fc.finish(MessageSegment.image(file=url, cache=False), at_sender=True)
-
 
 
 _sub_plugins = set()

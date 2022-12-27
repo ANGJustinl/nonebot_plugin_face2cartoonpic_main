@@ -5,7 +5,7 @@ import hmac
 import time
 
 import requests
-
+from .config import FaceCartoonPic_config
 
 
 class timestamp:
@@ -30,8 +30,8 @@ def get_redirect_url(url):
     return response.__dict__
 
 url = "https://ft.tencentcloudapi.com"
-SecretId = "AKID1tdCan6OTOCpH6g2EF2kEVZyVxCEHSyH"
-SecretKey = "DNSSGtLcgZGqJZhrwoQp23oKabO0SjzO"
+SecretId = FaceCartoonPic_config.Secret_Id
+SecretKey = FaceCartoonPic_config.Secret_Key
 Action = "FaceCartoonPic"
 
 Version ="2020-03-04"
