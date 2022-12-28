@@ -11,11 +11,11 @@ DESCRIPTION = '基于 腾讯云合成图的 以图绘图 NoneBot2插件'
 URL = 'https://github.com/ANGJustinl/nonebot_plugin_face2cartoonpic'
 EMAIL = 'angjustin@163.com'
 AUTHOR = 'ANGJustinl'
-VERSION = '0.2.5'
+VERSION = '0.2.9'
 
 setuptools.setup(
     name="nonebot_plugin_face2cartoonpic",
-    version="0.2.5",
+    version="0.2.9",
     author="ANGJustinl",
     author_email="angjustin@163.com",
     keywords=["pip", "nonebot2", "nonebot", "nonebot_plugin"],
@@ -31,7 +31,8 @@ setuptools.setup(
     include_package_data=True,
     platforms="any",
     install_requires=[
-        'nb-cli>=0.6.7'
+        'nonebot2>=2.0.0rc2'
+        'nonebot-adapter-onebot>=2.1.5'
         'pydantic>=1.9.2'        
     ],
     python_requires=">=3.8"
