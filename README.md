@@ -40,7 +40,7 @@ nb plugin install nonebot_plugin_face2cartoonpic
 pip install nonebot_plugin_face2cartoonpic --upgrade
 ```  
 打开 nonebot2 项目的 ```bot.py``` 文件, 在其中写入  
-```nonebot.load_plugin('nonebot_plugin_abstain_diary')```  
+```nonebot.load_plugin('nonebot_plugin_face2cartoonpic')```  
   
 或在bot路径```pyproject.toml```的```[tool.nonebot]```的```plugins```中添加```nonebot_plugin_face2cartoonpic```即可  
 pyproject.toml配置例如：  
@@ -76,7 +76,7 @@ FaceCartoonPic_cd_time = 60{int}默认60
 ### 指令表
 | 指令 | 需要@ | 范围 | 说明 |
 |:-----:|:----:|:----:|:----:|
-| 人物变换 + 图片 | 否 | 群聊/私聊 | 对发送的图片启用模型, 支持回复图片 |
+| 人像变换 + 图片 | 否 | 群聊/私聊 | 对发送的图片启用模型, 支持回复图片 |
 
 使用示例：
 
